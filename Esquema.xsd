@@ -1,3 +1,19 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <xsd:element name="Karate" type="Karate"/>
+    <xsd:element name="Karate" type="ListaKarate"/> <!-- Name hace referencia a XML y Type al mismo Schema -->
+    <xsd:complexType name="ListaKarate">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="Contador" type="ListaContador"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:simpleType name="ListaContador">
+        <xsd:restriction base="xsd:short">
+            <xsd:minInclusive value="-30"/>
+            <xsd:maxInclusive value="30"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
 </xsd:schema>
