@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="Style.css" type="text/css"?>
 <Karate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Esquema.xsd">
-    <Contador>20</Contador>
+    <Aspirante> 
+        <Id_Aspirante>001</Id_Aspirante>
+        <Nombres>Juan</Nombres>
+        <Apellidos>Ramirez</Apellidos>
+        <DNI>5436454F</DNI>
+        <Telefono>585448468</Telefono>
+        <Direccion>C/ Calla LaBoca 69</Direccion>
+    </Aspirante>
 </Karate>
