@@ -19,8 +19,8 @@
                     <xsd:element name="DNI" type="ListaDNI"/>
                     <xsd:element name="Telefono" type="ListaTLF"/>
                     <xsd:element name="Direccion" type="xsd:string"/>
-                <!--<xsd:element name="Fecha_Nacimiento" type="ListaAspirante"/>
-                    <xsd:element name="DAN" type="ListaAspirante"/>
+                    <xsd:element name="Fecha_Nacimiento" type="xsd:date"/>
+                <!--<xsd:element name="DAN" type="ListaAspirante"/>
                     <xsd:element name="Cinturon" type="ListaAspirante"/>
                     <xsd:element name="FotoDNI" type="ListaAspirante"/>-->
                 </xsd:sequence>
