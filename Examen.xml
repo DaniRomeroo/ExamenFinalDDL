@@ -9,5 +9,27 @@
         <Telefono>585448468</Telefono>
         <Direccion>C/ Calla LaBoca 69</Direccion>
         <Fecha_Nacimiento>2002-05-02</Fecha_Nacimiento>
+        <DAN>1</DAN>
+        <Cinturon>Negro</Cinturon>
+        <FotoDNI>No hay foto actualmente</FotoDNI>
     </Aspirante>
+    <Tribunal>
+        <Num_Jueces>3</Num_Jueces>
+        <Calificacion_final>10</Calificacion_final>
+        <Jueces>
+            <Id_Jueces>011</Id_Jueces>
+            <Nombres>Marc</Nombres>
+            <Apellidos>Anthony</Apellidos>
+        </Jueces>
+        <Jueces>
+            <Id_Jueces>010</Id_Jueces>
+            <Nombres>Pablo</Nombres>
+            <Apellidos>Picasso</Apellidos>
+        </Jueces>
+        <Jueces>
+            <Id_Jueces>012</Id_Jueces>
+            <Nombres>Sergio</Nombres>
+            <Apellidos>Ramirez</Apellidos>
+        </Jueces>
+    </Tribunal>
 </Karate>
