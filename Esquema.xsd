@@ -5,6 +5,7 @@
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
                     <xsd:element name="Aspirante" type="ListaAspirante"/>
+                    <xsd:element name="Tribunal" type="ListaTribunal"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -20,9 +21,9 @@
                     <xsd:element name="Telefono" type="ListaTLF"/>
                     <xsd:element name="Direccion" type="xsd:string"/>
                     <xsd:element name="Fecha_Nacimiento" type="xsd:date"/>
-                <!--<xsd:element name="DAN" type="ListaAspirante"/>
-                    <xsd:element name="Cinturon" type="ListaAspirante"/>
-                    <xsd:element name="FotoDNI" type="ListaAspirante"/>-->
+                    <xsd:element name="DAN" type="ListaDAN"/>
+                    <xsd:element name="Cinturon" type="ListaCint"/>
+                    <xsd:element name="FotoDNI" type="xsd:string"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -42,11 +43,56 @@
             <xsd:pattern value="[0-9]{9}"/>
         </xsd:restriction>
     </xsd:simpleType>
+    <xsd:simpleType name="ListaDAN">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-4]{1}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="ListaCint">
+        <xsd:restriction base="xsd:string">
+        <!--<xsd:element value="Negro" type="ListaJueces"/>
+            <xsd:pattern value="Marron"/>
+            <xsd:pattern value="Violeta"/>
+            <xsd:pattern value="Verde"/>
+            <xsd:pattern value="Azul"/>
+            <xsd:pattern value="Naranja"/>
+            <xsd:pattern value="Amarillo"/>
+            <xsd:pattern value="Blanco"/>-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="ListaTribunal">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="Num_Jueces" type="xsd:integer"/>
+                    <xsd:element name="Calificacion_final" type="ListaCal"/>
+                    <xsd:element name="Jueces" type="ListaJueces" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:simpleType name="ListaCal">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="10"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="ListaJueces">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="Id_Jueces" type="ListaID"/>
+                    <xsd:element name="Nombres" type="xsd:string"/>
+                    <xsd:element name="Apellidos" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
 </xsd:schema>
 
 <!-- PLANTILLAS EJEMPLO PARA RAPIDO ACCESO -->
 
-<!-- <xsd:simpleType name="rango">
+<!--<xsd:simpleType name="rango">
     <xsd:restriction base="xsd:short">
         <xsd:minInclusive value="-30"/>
         <xsd:maxInclusive value="30"/>
