@@ -13,6 +13,12 @@
         <Cinturon>Negro</Cinturon>
         <FotoDNI>No hay foto actualmente</FotoDNI>
     </Aspirante>
+    <Meritos>
+        <Id_Aspirante>001</Id_Aspirante>
+        <Edad_Aspirante>18</Edad_Aspirante>
+        <LicenciaActualizada>true</LicenciaActualizada>
+        <TrabajoEscrito>true</TrabajoEscrito>
+    </Meritos>
     <Tribunal>
         <Num_Jueces>3</Num_Jueces>
         <Calificacion_final>10</Calificacion_final>

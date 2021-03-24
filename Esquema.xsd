@@ -1,10 +1,12 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:element name="Karate" type="ListaKarate"/> <!-- Name hace referencia a XML y Type al mismo Schema -->
+    <!-- PREGUNTAR LO DE LOS BOOLEANS Y ACABAR CSS -->
     <xsd:complexType name="ListaKarate">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
                     <xsd:element name="Aspirante" type="ListaAspirante"/>
+                    <xsd:element name="Meritos" type="ListaMeritos"/>
                     <xsd:element name="Tribunal" type="ListaTribunal"/>
                     <xsd:element name="Examen" type="ListaExamen"/>
                     <xsd:element name="Resultados" type="ListaResultados"/>
@@ -60,6 +62,23 @@
             <xsd:pattern value="Naranja"/>
             <xsd:pattern value="Amarillo"/>
             <xsd:pattern value="Blanco"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="ListaMeritos">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="Id_Aspirante" type="tipoID"/>
+                    <xsd:element name="Edad_Aspirante" type="tipoEdad"/>
+                    <xsd:element name="LicenciaActualizada" type="xsd:boolean"/>
+                    <xsd:element name="TrabajoEscrito" type="xsd:boolean"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:simpleType name="tipoEdad">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{2}"/>
         </xsd:restriction>
     </xsd:simpleType>
     <xsd:complexType name="ListaTribunal">
