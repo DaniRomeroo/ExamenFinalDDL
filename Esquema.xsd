@@ -7,6 +7,7 @@
                     <xsd:element name="Aspirante" type="ListaAspirante"/>
                     <xsd:element name="Tribunal" type="ListaTribunal"/>
                     <xsd:element name="Examen" type="ListaExamen"/>
+                    <xsd:element name="Resultados" type="ListaResultados"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -108,12 +109,12 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="TecnicaDirecta" type="tipoDirecta"/>
-                    <xsd:element name="TecnicaCirculares" type="tipoCirculares"/>
-                    <xsd:element name="TecnicaPierna" type="tipoPierna"/>
-                    <xsd:element name="Teoria" type="tipoTeoria"/>
-                    <xsd:element name="Kata" type="tipoKata"/>
-                    <xsd:element name="Kumite" type="tipoKumite"/>
+                    <xsd:element name="TecnicaDirecta" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaCirculares" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaPierna" type="xsd:boolean"/>
+                    <xsd:element name="Teoria" type="xsd:boolean"/>
+                    <xsd:element name="Kata" type="xsd:boolean"/>
+                    <xsd:element name="Kumite" type="xsd:boolean"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -122,10 +123,10 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="Tecnicas" type="tipoTecnicas"/>
-                    <xsd:element name="Kata" type="tipoKata"/>
-                    <xsd:element name="Kumite" type="tipoKumite"/>
-                    <xsd:element name="Campeonatos" type="tipoCampeonatos"/>
+                    <xsd:element name="Tecnicas" type="xsd:boolean"/>
+                    <xsd:element name="Kata" type="xsd:boolean"/>
+                    <xsd:element name="Kumite" type="xsd:boolean"/>
+                    <xsd:element name="Campeonatos" type="xsd:boolean"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -134,14 +135,14 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="TecnicaDefensa" type="tipoDefensa"/>
-                    <xsd:element name="TecnicaPierna" type="tipoPierna"/>
-                    <xsd:element name="TecnicaDirectaIndirecta" type="tipoDirInd"/>
-                    <xsd:element name="TecnicaCombinada" type="tipoCombinada"/>
-                    <xsd:element name="Teoria" type="tipoTeoria"/>
-                    <xsd:element name="Kata" type="tipoKata"/>
-                    <xsd:element name="Kumite" type="tipoKumite"/>
-                    <xsd:element name="AplicacionTecnica" type="tipoAplicacion"/>
+                    <xsd:element name="TecnicaDefensa" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaPierna" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaDirectaIndirecta" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaCombinada" type="xsd:boolean"/>
+                    <xsd:element name="Teoria" type="xsd:boolean"/>
+                    <xsd:element name="Kata" type="xsd:boolean"/>
+                    <xsd:element name="Kumite" type="xsd:boolean"/>
+                    <xsd:element name="AplicacionTecnica" type="xsd:boolean"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -150,19 +151,19 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="TecnicaBase" type="tipoBase"/>
-                    <xsd:element name="TecnicaDirecta" type="tipoDirecta"/>
-                    <xsd:element name="TecnicaIndirectaCircular" type="tipoIndCircular"/>
-                    <xsd:element name="TecnicaPierna" type="tipoPierna"/>
-                    <xsd:element name="TecnicaCombinada" type="tipoCombinada"/>
-                    <xsd:element name="Teoria" type="tipoTeoria"/>
-                    <xsd:element name="Kata" type="tipoKata"/>
-                    <xsd:element name="Kumite" type="tipoKumite"/>
-                    <xsd:element name="Campeonatos" type="tipoCampeonatos"/>
-                    <xsd:element name="Tecnicas" type="tipoTecnicas"/>
-                    <xsd:element name="Aplicacion" type="tipoAplicacion"/>
-                    <xsd:element name="AplicacionTecnica" type="tipoAplicacion"/>
-                    <xsd:element name="DemoLibre" type="tipoLibre"/>                    
+                    <xsd:element name="TecnicaBase" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaDirecta" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaIndirectaCircular" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaPierna" type="xsd:boolean"/>
+                    <xsd:element name="TecnicaCombinada" type="xsd:boolean"/>
+                    <xsd:element name="Teoria" type="xsd:boolean"/>
+                    <xsd:element name="Kata" type="xsd:boolean"/>
+                    <xsd:element name="Kumite" type="xsd:boolean"/>
+                    <xsd:element name="Campeonatos" type="xsd:boolean"/>
+                    <xsd:element name="Tecnicas" type="xsd:boolean"/>
+                    <xsd:element name="Aplicacion" type="xsd:boolean"/>
+                    <xsd:element name="AplicacionTecnica" type="xsd:boolean"/>
+                    <xsd:element name="DemoLibre" type="xsd:boolean"/>                    
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -171,16 +172,16 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="VariacionesTecnica" type="tipoDirecta"/>
-                    <xsd:element name="Kumite" type="tipoKumite"/>
-                    <xsd:element name="Kata" type="tipoKata"/>
-                    <xsd:element name="AplicacionTecnica" type="tipoAplicacion"/>
-                    <xsd:element name="Teoria" type="tipoTeoria"/>
-                    <xsd:element name="Campeonatos" type="tipoCampeonatos"/>
-                    <xsd:element name="Tecnicas" type="tipoTecnicas"/>
-                    <xsd:element name="Aplicacion" type="tipoAplicacion"/>
-                    <xsd:element name="AplicacionTecnica" type="tipoAplicacion"/>
-                    <xsd:element name="DemoLibre" type="tipoLibre"/>                         
+                    <xsd:element name="VariacionesTecnica" type="xsd:boolean"/>
+                    <xsd:element name="Kumite" type="xsd:boolean"/>
+                    <xsd:element name="Kata" type="xsd:boolean"/>
+                    <xsd:element name="AplicacionTecnica" type="xsd:boolean"/>
+                    <xsd:element name="Teoria" type="xsd:boolean"/>
+                    <xsd:element name="Campeonatos" type="xsd:boolean"/>
+                    <xsd:element name="Tecnicas" type="xsd:boolean"/>
+                    <xsd:element name="Aplicacion" type="xsd:boolean"/>
+                    <xsd:element name="AplicacionTecnica" type="xsd:boolean"/>
+                    <xsd:element name="DemoLibre" type="xsd:boolean"/>                         
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -189,11 +190,11 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="Kumite" type="tipoKumite"/>
-                    <xsd:element name="Kata" type="tipoKata"/>
-                    <xsd:element name="Coloquio" type="tipoColoquio"/>
-                    <xsd:element name="AplicacionTecnica" type="tipoAplicacion"/>
-                    <xsd:element name="DemoLibre" type="tipoLibre"/>                             
+                    <xsd:element name="Kumite" type="xsd:boolean"/>
+                    <xsd:element name="Kata" type="xsd:boolean"/>
+                    <xsd:element name="Coloquio" type="xsd:boolean"/>
+                    <xsd:element name="AplicacionTecnica" type="xsd:boolean"/>
+                    <xsd:element name="DemoLibre" type="xsd:boolean"/>                             
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -202,108 +203,43 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="Kata" type="tipoKata"/>
-                    <xsd:element name="Coloquio" type="tipoColoquio"/>
+                    <xsd:element name="Kata" type="xsd:boolean"/>
+                    <xsd:element name="Coloquio" type="xsd:boolean"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
     </xsd:complexType>
-    <xsd:simpleType name="tipoDirecta">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoCirculares">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoPierna">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoTeoria">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoKata">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoKumite">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoTecnicas">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoCampeonatos">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoDefensa">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoDirInd">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-        <xsd:simpleType name="tipoCombinada">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoAplicacion">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoBase">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoIndCircular">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoLibre">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-    <xsd:simpleType name="tipoColoquio">
-        <xsd:restriction base="xsd:boolean">
-            <xsd:pattern value="false"/>
-            <xsd:pattern value="true"/>
-        </xsd:restriction>
-    </xsd:simpleType>
+        <xsd:complexType name="ListaResultados">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:choice>
+                    <xsd:element name="SuspendeExamen" type="tipoSuspende"/>
+                    <xsd:element name="ApruebaExamen" type="tipoAprueba"/>
+                </xsd:choice>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="tipoSuspende">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="idAspirante" type="xsd:boolean"/>
+                    <xsd:element name="SuspendeParcial" type="xsd:boolean"/>
+                    <xsd:element name="SuspendeTotal" type="xsd:boolean"/>
+                    <xsd:element name="SuspendeSegundaFase" type="xsd:boolean"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="tipoAprueba">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="SiguienteCurso" type="xsd:boolean"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
 </xsd:schema>
 
 <!-- PLANTILLAS EJEMPLO PARA RAPIDO ACCESO -->

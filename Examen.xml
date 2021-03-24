@@ -33,6 +33,20 @@
         </Jueces>
     </Tribunal>
     <Examen>
-        
+        <CinturonNegro1DAN>
+            <TecnicaDefensa>true</TecnicaDefensa>
+            <TecnicaPierna>true</TecnicaPierna>
+            <TecnicaDirectaIndirecta>true</TecnicaDirectaIndirecta>
+            <TecnicaCombinada>true</TecnicaCombinada>
+            <Teoria>true</Teoria>
+            <Kata>true</Kata>
+            <Kumite>true</Kumite>
+            <AplicacionTecnica>true</AplicacionTecnica>
+        </CinturonNegro1DAN>
     </Examen>
+    <Resultados>
+        <ApruebaExamen>
+            <SiguienteCurso>true</SiguienteCurso>
+        </ApruebaExamen>
+    </Resultados>
 </Karate>
