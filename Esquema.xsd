@@ -265,25 +265,3 @@
         </xsd:complexContent>
     </xsd:complexType>
 </xsd:schema>
-
-<!-- PLANTILLAS EJEMPLO PARA RAPIDO ACCESO -->
-
-<!--<xsd:simpleType name="rango">
-    <xsd:restriction base="xsd:short">
-        <xsd:minInclusive value="-30"/>
-        <xsd:maxInclusive value="30"/>
-    </xsd:restriction>
-</xsd:simpleType> 
-
-<xsd:simpleType name="codigo">
-    <xsd:restriction base="xsd:string">
-        <xsd:pattern value="[A-Z]{3}[0-9][A-Z]{2}"/>
-    </xsd:restriction>
-</xsd:simpleType> 
-
-<xsd:simpleType name="boolean">
-    <xsd:restriction base="xsd:boolean">
-        <xsd:pattern value="false"/>
-        <xsd:pattern value="true"/>
-    </xsd:restriction>
-</xsd:simpleType>-->
