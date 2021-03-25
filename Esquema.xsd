@@ -1,6 +1,5 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <xsd:element name="Karate" type="ListaKarate"/> <!-- Name hace referencia a XML y Type al mismo Schema -->
-    <!-- PREGUNTAR LO DE LOS BOOLEANS Y ACABAR CSS -->
+    <xsd:element name="Karate" type="ListaKarate"/>
     <xsd:complexType name="ListaKarate">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
