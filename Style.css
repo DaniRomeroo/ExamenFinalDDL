@@ -1,0 +1,67 @@
+Aspirante {
+    display: table;
+}
+
+Aspirante Id_Aspirante, 
+Aspirante Nombres, 
+Aspirante Apellidos, 
+DNI, Telefono, 
+Direccion, 
+Fecha_Nacimiento, 
+DAN, Cinturon, 
+Fecha_Ingreso_DAN,
+Fecha_Anterior_DAN {
+    border: black 1px solid;
+    display: block;
+    position: relative;
+    display: table-cell;
+    padding: 6px;
+    background-color: cadetblue;
+}
+
+FotoAspirante, 
+FotoDNI, 
+FotoCarnetGrados {
+    border: black 1px solid;
+    position: relative;
+    padding: 6px;
+    background-color: cadetblue;
+}
+
+Aspirante:before{
+    content: "Datos Aspirante: ";
+    display: block;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 6px;
+}
+Aspirante Id_Aspirante:before{
+    content: "ID: ";
+}
+Aspirante Nombres:before{
+    content: "Nombre: ";
+}
+Aspirante Apellidos:before{
+    content: "Apellido: ";
+}
+Aspirante DNI:before{
+    content: "DNI: ";
+}
+Aspirante Telefono:before{
+    content: "TLF: ";
+}
+Aspirante Fecha_Nacimiento:before{
+    content: "F. Nacimiento: ";
+}
+Aspirante DAN:before{
+    content: "DAN: ";
+}
+Aspirante Cinturon:before{
+    content: "Cinturon: ";
+}
+Aspirante Fecha_Ingreso_DAN:before{
+    content: "F. Ingreso: ";
+}
+Aspirante Fecha_Anterior_DAN:before{
+    content: "F. Ingreso Anterior: ";
+}

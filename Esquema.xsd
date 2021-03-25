@@ -27,7 +27,11 @@
                     <xsd:element name="Fecha_Nacimiento" type="xsd:date"/>
                     <xsd:element name="DAN" type="tipoDAN"/>
                     <xsd:element name="Cinturon" type="tipoCint"/>
+                    <xsd:element name="Fecha_Ingreso_DAN" type="xsd:date"/>
+                    <xsd:element name="FotoAspirante" type="xsd:string"/>
+                    <xsd:element name="Fecha_Anterior_DAN" type="xsd:date"/>
                     <xsd:element name="FotoDNI" type="xsd:string"/>
+                    <xsd:element name="FotoCarnetGrados" type="xsd:string"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>

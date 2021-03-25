@@ -11,7 +11,11 @@
         <Fecha_Nacimiento>2002-05-02</Fecha_Nacimiento>
         <DAN>1</DAN>
         <Cinturon>Negro</Cinturon>
-        <FotoDNI>No hay foto actualmente</FotoDNI>
+        <Fecha_Ingreso_DAN>2020-10-03</Fecha_Ingreso_DAN>
+        <FotoAspirante>FotoAspirante.png</FotoAspirante>
+        <Fecha_Anterior_DAN>2019-12-31</Fecha_Anterior_DAN>
+        <FotoDNI>FotoDNI.png</FotoDNI>
+        <FotoCarnetGrados>FotoCarnet.png</FotoCarnetGrados>
     </Aspirante>
     <Meritos>
         <Id_Aspirante>001</Id_Aspirante>
