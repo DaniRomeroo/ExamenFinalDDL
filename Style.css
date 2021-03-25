@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap');
 html{
-    background-color: rgb(164, 196, 164);
+    background: rgb(8, 67, 75);
 }
 /* LOADER */
 .loader {
@@ -11,7 +12,7 @@ html{
     transition: all 0.15s;
     position: fixed;
     z-index: 9999;
-    background: rgb(164, 196, 164);
+    background: rgb(8, 67, 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,7 +95,8 @@ html{
 
 /* XML */
 Karate {
-    background-color: rgb(164, 196, 164);
+    background-color: rgb(8, 67, 75);
+    font-family: 'Noto Sans HK', sans-serif;
 }
 Aspirante {
     display: table;
@@ -102,7 +104,7 @@ Aspirante {
 }
 Aspirante:before{
     content: "Datos Aspirante: ";
-    background-color: white;
+    background-color: rgb(194, 194, 194);
     display: block;
     border: black 1px solid;
     display: table-cell;
@@ -163,7 +165,39 @@ Aspirante Fecha_Ingreso_DAN:before{
 Aspirante Fecha_Anterior_DAN:before{
     content: "F. Ingreso Anterior: ";
 }
-
+Aspirante Id_Aspirante:hover {
+    background-color: rgb(62, 135, 145);
+}
+Aspirante Nombres:hover {
+    background-color: rgb(62, 135, 145);
+}
+Aspirante Apellidos:hover {
+    background-color: rgb(62, 135, 145);
+}
+DNI:hover {
+    background-color: rgb(62, 135, 145);
+}
+Telefono:hover {
+    background-color: rgb(62, 135, 145);
+}
+Direccion:hover {
+    background-color: rgb(62, 135, 145);
+}
+Fecha_Nacimiento:hover {
+    background-color: rgb(62, 135, 145);
+}
+DAN:hover {
+    background-color: rgb(62, 135, 145);
+}
+Cinturon:hover {
+    background-color: rgb(62, 135, 145);
+}
+Fecha_Ingreso_DAN:hover {
+    background-color: rgb(62, 135, 145);
+}
+Fecha_Anterior_DAN:hover{
+    background-color: rgb(62, 135, 145);
+}
 Meritos {
     display: table;
     margin: 15px;
@@ -177,7 +211,7 @@ Meritos:before{
     border: black 1px solid;
     display: table-cell;
     padding: 6px;
-    background-color: white;
+    background-color: rgb(194, 194, 194);
 }
 Meritos Id_Aspirante, 
 Edad_Aspirante,
@@ -188,7 +222,7 @@ TrabajoEscrito {
     position: relative;
     display: table-cell;
     padding: 6px;
-    background-color: rgb(111, 112, 182);
+    background-color: rgb(131, 132, 207);
 }
 Meritos Id_Aspirante:before{
     content: "ID: ";
@@ -199,8 +233,23 @@ Meritos Edad_Aspirante:before{
 Meritos LicenciaActualizada:before{
     content: "Licencia Actualizada: ";
 }
-Meritos TrabajoEscrito:before{
+Meritos TrabajoEscrito:before {
     content: "Trabajo Escrito: ";
+}
+Meritos TrabajoEscrito:hover {
+    background-color: rgb(115, 117, 235);
+}
+Meritos Id_Aspirante:hover {
+    background-color: rgb(115, 117, 235);
+}
+Meritos Edad_Aspirante:hover {
+    background-color: rgb(115, 117, 235);
+}
+Meritos LicenciaActualizada:hover {
+    background-color: rgb(115, 117, 235);
+}
+Meritos TrabajoEscrito:hover {
+    background-color: rgb(115, 117, 235);
 }
 
 Tribunal{
@@ -212,7 +261,7 @@ Tribunal:before{
     border: black 1px solid;
     display: table-cell;
     padding: 6px;
-    background-color: white;
+    background-color: rgb(194, 194, 194);
 }
 Num_Jueces,
 Calificacion_final{
@@ -221,12 +270,19 @@ Calificacion_final{
     position: relative;
     display: table-cell;
     padding: 6px;
-    background-color: rgba(75, 139, 123, 0.822);
+    background-color: rgba(58, 194, 160, 0.822);
 }
 Tribunal Num_Jueces:before{
     content: "Num. Jueces: ";
 }
-Tribunal Calificacion_final:before{
+Tribunal Calificacion_final:hover {
+    background-color: rgba(81, 161, 141, 0.822);
+}
+Tribunal Num_Jueces:hover {
+    background-color: rgba(81, 161, 141, 0.822);
+}
+
+Tribunal Calificacion_final:before {
     content: "Calificacion final: ";
 }
 Tribunal Jueces:before{
@@ -235,7 +291,7 @@ Tribunal Jueces:before{
     padding: 6px;
     display: table;
     margin: 15px;
-    background-color: white;
+    background-color: rgb(194, 194, 194);
 }
 Nombres,
 Apellidos, 
@@ -243,14 +299,14 @@ Diploma {
     border: black 1px solid; 
     display: table-cell;
     padding: 6px;
-    background-color: rgba(75, 139, 123, 0.822);
+    background-color: rgba(58, 194, 160, 0.822);
     margin-left: 0px;
 }
 Id_Jueces{
     border: black 1px solid;
     display: inline-block;
     padding: 6px;
-    background-color: rgba(75, 139, 123, 0.822);
+    background-color: rgba(58, 194, 160, 0.822);
     margin-left: 15px;
 }
 Jueces Nombres:before{
@@ -262,14 +318,23 @@ Jueces Apellidos:before{
 Jueces Diploma:before {
     content: "Diploma: ";
 }
+Jueces Nombres:hover {
+    background-color: rgba(81, 161, 141, 0.822);
+}
+Jueces Apellidos:hover {
+    background-color: rgba(81, 161, 141, 0.822);
+}
+Jueces Diploma:hover {
+    background-color: rgba(81, 161, 141, 0.822);
+}
 CinturonNegro1DAN{
     display: table;
     margin: 15px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    bottom: 299px;
-    right: 135px;
+    bottom: 335px;
+    left: 25px;
 }
 CinturonNegro1DAN:before {
     content: "Examen: ";
@@ -277,7 +342,7 @@ CinturonNegro1DAN:before {
     border: black 1px solid;
     display: table-cell;
     padding: 6px;
-    background-color: white;
+    background-color: rgb(194, 194, 194);
 }
 TecnicaDefensa,
 TecnicaPierna,
@@ -290,8 +355,8 @@ AplicacionTecnica {
     border: black 1px solid;
     display: list-item;
     padding: 6px;
-    background-color: rgba(150, 230, 174, 0.822);
-    width: 180px;
+    background-color: rgba(207, 150, 230, 0.822);
+    width: 200px;
     list-style:none;
 }
 TecnicaDefensa:before {
@@ -318,6 +383,30 @@ Kumite:before {
 AplicacionTecnica:before {
     content: "Aplicacion Tecnica: ";
 }
+TecnicaDefensa:hover {
+    background-color: rgba(205, 80, 255, 0.822);
+}
+TecnicaPierna:hover {
+    background-color: rgba(205, 80, 255, 0.822);
+}
+TecnicaDirectaIndirecta:hover {
+    background-color: rgba(205, 80, 255, 0.822);
+}
+TecnicaCombinada:hover {
+    background-color: rgba(205, 80, 255, 0.822);
+}
+Teoria:hover {
+    background-color: rgba(205, 80, 255, 0.822);
+}
+Kata:hover {
+    background-color: rgba(205, 80, 255, 0.822);
+}
+Kumite:hover {
+    background-color: rgba(205, 80, 255, 0.822);
+}
+AplicacionTecnica:hover {
+    background-color: rgba(205, 80, 255, 0.822);
+}
 Resultados {
     display: table;
     margin: 15px;
@@ -325,7 +414,7 @@ Resultados {
     margin-left: auto;
     margin-right: auto;
     bottom: 480px;
-    left: 200px;
+    left: 500px;
 }
 Resultados:before {
     content: "Resultados: ";
@@ -333,7 +422,7 @@ Resultados:before {
     border: black 1px solid;
     display: table-cell;
     padding: 6px;
-    background-color: white;
+    background-color: rgb(194, 194, 194);
 }
 ApruebaExamen {
     border: black 1px solid;
@@ -345,4 +434,7 @@ ApruebaExamen {
 }
 SiguienteCurso:before {
     content: "Examen Aprobado: ";
+}
+ApruebaExamen:hover {
+    background-color: rgba(0, 255, 0, 0.822);
 }
