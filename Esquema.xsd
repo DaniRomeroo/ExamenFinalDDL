@@ -109,6 +109,7 @@
                     <xsd:element name="Id_Jueces" type="tipoID"/>
                     <xsd:element name="Nombres" type="xsd:string"/>
                     <xsd:element name="Apellidos" type="xsd:string"/>
+                     <xsd:element name="Diploma" type="xsd:boolean"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>

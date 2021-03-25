@@ -30,16 +30,19 @@
             <Id_Jueces>011</Id_Jueces>
             <Nombres>Marc</Nombres>
             <Apellidos>Anthony</Apellidos>
+            <Diploma>true</Diploma>
         </Jueces>
         <Jueces>
             <Id_Jueces>010</Id_Jueces>
             <Nombres>Pablo</Nombres>
             <Apellidos>Picasso</Apellidos>
+            <Diploma>true</Diploma>
         </Jueces>
         <Jueces>
             <Id_Jueces>012</Id_Jueces>
             <Nombres>Sergio</Nombres>
             <Apellidos>Ramirez</Apellidos>
+            <Diploma>true</Diploma>
         </Jueces>
     </Tribunal>
     <Examen>

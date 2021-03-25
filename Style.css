@@ -1,5 +1,6 @@
 Aspirante {
     display: table;
+    margin: 15px;
 }
 Aspirante:before{
     content: "Datos Aspirante: ";
@@ -58,7 +59,7 @@ Aspirante Cinturon:before{
     content: "Cinturon: ";
 }
 Aspirante Fecha_Ingreso_DAN:before{
-    content: "F. Ingreso: ";
+    content: "F. Ingreso Actual: ";
 }
 Aspirante Fecha_Anterior_DAN:before{
     content: "F. Ingreso Anterior: ";
@@ -66,6 +67,10 @@ Aspirante Fecha_Anterior_DAN:before{
 
 Meritos {
     display: table;
+    margin: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 Meritos:before{
     content: "Meritos: ";
@@ -99,7 +104,7 @@ Meritos TrabajoEscrito:before{
 }
 
 Tribunal{
-    display: table;
+    margin: 15px;
 }
 Tribunal:before{
     content: "Tribunal: ";
@@ -115,7 +120,7 @@ Calificacion_final{
     position: relative;
     display: table-cell;
     padding: 6px;
-    background-color: rgba(224, 202, 127, 0.822);
+    background-color: rgba(75, 139, 123, 0.822);
 }
 Tribunal Num_Jueces:before{
     content: "Num. Jueces: ";
@@ -123,26 +128,117 @@ Tribunal Num_Jueces:before{
 Tribunal Calificacion_final:before{
     content: "Calificacion final: ";
 }
-Tribunal Jueces::before{
+Tribunal Jueces:before{
     content: "Info. Juez: ";
-    display: block;
     border: black 1px solid;
-    display: table-cell;
     padding: 6px;
-}   
-Id_Jueces,
+    display: table;
+    margin: 15px;
+}
 Nombres,
-Apellidos {
-    border: black 1px solid;
-    display: block;
-    position: relative;
+Apellidos, 
+Diploma {
+    border: black 1px solid; 
     display: table-cell;
     padding: 6px;
-    background-color: rgba(224, 202, 127, 0.822);
+    background-color: rgba(75, 139, 123, 0.822);
+    margin-left: 0px;
+}
+Id_Jueces{
+    border: black 1px solid;
+    display: inline-block;
+    padding: 6px;
+    background-color: rgba(75, 139, 123, 0.822);
+    margin-left: 15px;
 }
 Jueces Nombres:before{
     content: "Nombre: ";
 }
-Juecess Apellidos:before{
+Jueces Apellidos:before{
     content: "Apellido: ";
+}
+Jueces Diploma:before {
+    content: "Diploma: ";
+}
+CinturonNegro1DAN{
+    display: table;
+    margin: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 299px;
+    right: 135px;
+}
+CinturonNegro1DAN:before {
+    content: "Examen: ";
+    display: block;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 6px;
+}
+TecnicaDefensa,
+TecnicaPierna,
+TecnicaDirectaIndirecta,
+TecnicaCombinada,
+Teoria,
+Kata,
+Kumite,
+AplicacionTecnica {
+    border: black 1px solid;
+    display: list-item;
+    padding: 6px;
+    background-color: rgba(150, 230, 174, 0.822);
+    width: 180px;
+    list-style:none;
+}
+TecnicaDefensa:before {
+    content: "Tecnica Defensa: ";
+}
+TecnicaPierna:before {
+    content: "Tecnica Pierna: ";
+}
+TecnicaDirectaIndirecta:before {
+    content: "Tecnica Directa/Indirecta: ";
+}
+TecnicaCombinada:before {
+    content: "Tecnica Combinada: ";
+}
+Teoria:before {
+    content: "Teoria: ";
+}
+Kata:before {
+    content: "Kata: ";
+}
+Kumite:before {
+    content: "Kumite: ";
+}
+AplicacionTecnica:before {
+    content: "Aplicacion Tecnica: ";
+}
+Resultados {
+    display: table;
+    margin: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 480px;
+    left: 200px;
+}
+Resultados:before {
+    content: "Resultados: ";
+    display: block;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 6px;
+}
+ApruebaExamen {
+    border: black 1px solid;
+    display: list-item;
+    padding: 6px;
+    background-color: green;
+    width: 180px;
+    list-style: none;
+}
+SiguienteCurso:before {
+    content: "Examen Aprobado: ";
 }
