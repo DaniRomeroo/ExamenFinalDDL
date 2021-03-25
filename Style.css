@@ -17,8 +17,7 @@ html{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Raleway'Arial,
-        sans-serif;
+    font-family: 'Raleway'Arial, sans-serif;
 }
 .title {
     position: absolute;
@@ -29,7 +28,7 @@ html{
     text-align: center;
     text-transform: uppercase;
     font-family: 'Raleway', Arial, sans-serif;
-    color: #656666;
+    color: #b8b9b9;
 }
 @-webkit-keyframes rotate {
     to {
