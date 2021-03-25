@@ -1,7 +1,13 @@
 Aspirante {
     display: table;
 }
-
+Aspirante:before{
+    content: "Datos Aspirante: ";
+    display: block;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 6px;
+}
 Aspirante Id_Aspirante, 
 Aspirante Nombres, 
 Aspirante Apellidos, 
@@ -18,22 +24,14 @@ Fecha_Anterior_DAN {
     padding: 6px;
     background-color: cadetblue;
 }
-
 FotoAspirante, 
 FotoDNI, 
 FotoCarnetGrados {
     border: black 1px solid;
-    position: relative;
-    padding: 6px;
-    background-color: cadetblue;
-}
-
-Aspirante:before{
-    content: "Datos Aspirante: ";
-    display: block;
-    border: black 1px solid;
+    position: block;
     display: table-cell;
     padding: 6px;
+    background-color: cadetblue;
 }
 Aspirante Id_Aspirante:before{
     content: "ID: ";
@@ -64,4 +62,87 @@ Aspirante Fecha_Ingreso_DAN:before{
 }
 Aspirante Fecha_Anterior_DAN:before{
     content: "F. Ingreso Anterior: ";
+}
+
+Meritos {
+    display: table;
+}
+Meritos:before{
+    content: "Meritos: ";
+    display: block;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 6px;
+}
+Meritos Id_Aspirante, 
+Edad_Aspirante,
+LicenciaActualizada,
+TrabajoEscrito {
+    border: black 1px solid;
+    display: block;
+    position: relative;
+    display: table-cell;
+    padding: 6px;
+    background-color: yellowgreen;
+}
+Meritos Id_Aspirante:before{
+    content: "ID: ";
+}
+Meritos Edad_Aspirante:before{
+    content: "Edad: ";
+}
+Meritos LicenciaActualizada:before{
+    content: "Licencia Actualizada: ";
+}
+Meritos TrabajoEscrito:before{
+    content: "Trabajo Escrito: ";
+}
+
+Tribunal{
+    display: table;
+}
+Tribunal:before{
+    content: "Tribunal: ";
+    display: block;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 6px;
+}
+Num_Jueces,
+Calificacion_final{
+    border: black 1px solid;
+    display: block;
+    position: relative;
+    display: table-cell;
+    padding: 6px;
+    background-color: rgba(224, 202, 127, 0.822);
+}
+Tribunal Num_Jueces:before{
+    content: "Num. Jueces: ";
+}
+Tribunal Calificacion_final:before{
+    content: "Calificacion final: ";
+}
+Tribunal Jueces::before{
+    content: "Info. Juez: ";
+    display: block;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 6px;
+}   
+Id_Jueces,
+Nombres,
+Apellidos {
+    border: black 1px solid;
+    display: block;
+    position: relative;
+    display: table-cell;
+    padding: 6px;
+    background-color: rgba(224, 202, 127, 0.822);
+}
+Jueces Nombres:before{
+    content: "Nombre: ";
+}
+Juecess Apellidos:before{
+    content: "Apellido: ";
 }
