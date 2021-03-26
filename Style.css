@@ -79,7 +79,7 @@ html{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    position: block;
+    position: fixed;
     margin-top: 400px;
     margin-bottom: 0;
     margin-right: 0;
