@@ -73,7 +73,7 @@ html{
     left: 42%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
+}
 .button {
     display: inline-block;
     padding: 15px 25px;
