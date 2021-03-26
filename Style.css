@@ -66,6 +66,14 @@ html{
 }
 
 /* BOTON */
+.centrar {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 .button {
     display: inline-block;
     padding: 15px 25px;
@@ -79,12 +87,6 @@ html{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    position: absolute;
-    top: 380px;
-    bottom: 530px;
-    right: 0;
-    left: 800px;
-    align-self: center;
 }
 .button:hover {
     background-color: #292929
