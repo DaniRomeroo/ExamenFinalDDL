@@ -79,11 +79,12 @@ html{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    position: fixed;
-    margin-top: 400px;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-left: 800px;
+    position: absolute;
+    top: 380px;
+    bottom: 530px;
+    right: 0;
+    left: 800px;
+    align-self: center;
 }
 .button:hover {
     background-color: #292929
